@@ -2,6 +2,8 @@ import { Form, Button } from 'react-bootstrap';
 import { EmployeeContext } from '../../../contexts/EmployeeContext';
 import { useContext, useState } from 'react';
 
+// The project was  done without PORTAL
+
 const AddForm = () => {
 
     const { dispatch } = useContext(EmployeeContext);

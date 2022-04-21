@@ -34,6 +34,8 @@ const EmployeeList = () => {
     };
   }, [sortedEmployees]);
 
+  // LOGIC OF PAGINATION
+
   const indexOfLastEmployee = currentPage * employeesPerPage;/* akyrky indexti taap alyshybyz kerek */
   const indexOfFirstEmployee = indexOfLastEmployee - employeesPerPage;/* birinchi indexti taap alyshybyz kerek */
   const currentEmployees = sortedEmployees.slice(indexOfFirstEmployee, indexOfLastEmployee);/* arry listtin ichinden birinchi index menen akryky index'ke tuuralap kesip alabyz */

@@ -48,20 +48,8 @@ const EmployeeContextProvider = (props) => {
         localStorage.setItem('employees', JSON.stringify(employees))
     })
 
-    //const sortedEmployees = employees.sort((a,b) => (a.name < b.name ? -1 : 1 ));
     const sortedEmployees = employees.sort((a,b) => (a.name < b.name ? -1 : 1 ));
 
-/*     const addEmployee = (name, email, address, phone) => {
-        setEmployees([...employees, {id:uuidv4(), name, email, address, phone}])
-    } */
-
-/*     const deleteEmployee = (id) => {
-        setEmployees(employees.filter(employee => employee.id !==id))
-    } */
-
-/*     const updateEmployee = (id, updatedEmployee) => {
-        setEmployees(employees.map((employee) => (employee.id === id ? updatedEmployee : employee)))
-    } */
 
     return (
         <EmployeeContext.Provider value={{sortedEmployees, dispatch}}>
